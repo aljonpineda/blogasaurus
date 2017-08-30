@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{{ title }} - Aljon Pineda's Blogasaurus</title>
+  <link rel="stylesheet" href="resources/myStyle.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="resources/script.js"></script>
+</head>
+
+<body>
+
+  <a href="/">Home</a>
+
+  <div class="animated_heading">
+    <h2>{{ title }}</h2>
+  </div>
+
+
+    <div class="center_image">
+      <img src="resources/{{ image }}"
+        width="80" height="80" alt="Photo of Aljon Pineda" id="my_pic"/>
+    </div>
+
+
+  <button id="show_paragraph_button">Show</button>
+  <button id="hide_paragraph_button">Hide</button>
+
+  <p class="boxed_text">
+    {{ content }}
+  </p>
+
+  <h3>Comments</h3>
+
+  <form method="post" action="">
+    <label>Name: </label>
+    <input type="text" name="username" id="username"/><br>
+    <label>Leave a comment: </label><br>
+    <textarea rows="5" cols="50" name="comment" id="comment"></textarea><br>
+    <input type="submit" id="submit_button" value="Submit"/>
+  </form>
+
+  <div class="comments_area">
+    {{ comments }}
+  </div>
+
+</body>
+</html>
+
+<!-- This is a comment -->
